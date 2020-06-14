@@ -1,0 +1,161 @@
+.header
+  height: 82px
+  border-bottom: 1px solid #5288be
+  &-bg
+    position: absolute
+    z-index: -1
+    top: -37px
+    left: 0
+    img
+      width: 104.5%
+  &-panel
+    height: 82px
+    display: flex
+    +sb
+    color: darken($white-color, 10)
+    &__contact
+      padding-top: 30px
+      margin-left: 32px
+      margin-right: -4px
+    &__phone
+      margin-top: -3px
+      +light
+      font-size: 20px
+      color: $white-color
+    &__number
+      display: flex
+      align-items: center
+    &__icon
+      margin-right: 10px
+    &__info
+      display: flex
+      padding-top: 14px
+    &__logo
+      display: flex
+      flex-direction: column
+      img
+        display: block
+        margin: 0
+        width: 108px
+    &__address
+      margin-top: 13px
+      +eb
+      font-size: 13px
+    &__description
+      margin-left: 5px
+      margin-top: 13px
+      +light
+      font-size: 13px
+    &__btn
+      margin-top: 5px
+      margin-left: 2px
+      padding: 14.5px 22px 14.5px 34px
+    &__buttons
+      position: relative
+      display: flex
+    &__phico
+      position: absolute
+      top: 11px
+      left: -9px
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 33px
+      height: 33px
+      border-radius: 100%
+      background: white
+      box-shadow: 3px 0 5px lighten($main-color, 35)
+      img
+        margin-top: -2px
+        margin-left: -3px
+  &-nav
+    height: 100%
+    margin-left: 41px
+    margin-top: -2px
+    a 
+      font-size: 15px
+      color: $white-color
+      transition: 0.2s
+    &__menu
+      height: 100%
+      display: flex
+      padding: 0
+      margin: 0
+    &__dropdown
+      display: none
+      position: absolute
+      top: 84px
+      left: 0
+      height: auto
+      width: 258px
+      margin: 0
+      padding: 0
+      padding-top: 10px
+      padding-bottom: 20px
+      flex-direction: column
+      background: rgba(255, 255, 255, 0.14)
+      border-radius: 0 0 5px 5px
+      li
+        position: relative
+        display: block
+        margin: 0
+        padding-top: 10px
+        padding-bottom: 5px
+        line-height: 15px
+        text-align: center
+        a
+          color: $white-color !important
+          font-size: 13px
+          transition: 0.2s
+        &:hover
+          a
+            color: darken($white-color, 18) !important
+          &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 254px
+            background: transparent
+            animation: none
+            animation: aniDrop 0.3s
+            animation-fill-mode: forwards
+            border-right: 2px solid white
+            border-left: 2px solid white
+        
+        
+    &__item
+      position: relative
+      height: 100%
+      display: flex
+      align-items: center
+      padding-right: 14px
+      padding-left: 14px
+      line-height: 0
+      &:hover
+        cursor: pointer
+        a
+          color: darken($white-color, 18)
+        &::after
+          content: ''
+          position: absolute
+          bottom: -2px
+          left: 0
+          display: block
+          height: 2px
+          animation: aniNav 0.7s
+          animation-fill-mode: forwards
+          background: white
+        .header-nav__dropdown
+          display: flex
+
+      &:last-child
+        margin: 0
+    
+
+.extrabold
+  +eb
+
+
+// .active-page
+//   color: $white-color !important

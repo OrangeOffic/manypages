@@ -1,4 +1,27 @@
+*
+  box-sizing: border-box
+
 body
-  font-family: Arial, Helvetica, sans-serif;
-  color: black
+  +reg
+  color: $text-color
+
+a 
+  text-decoration: none
+  &:hover
+    color: darken($white-color, 18)
   
+.btn
+  padding: 14px 20px
+  +sb
+  font-size: 14px
+  border: 0
+  border-radius: 100px
+  box-shadow: 0 0 13px rgba(255,255,255,0.35)
+  &:focus
+    outline: none
+  &:hover
+    cursor: pointer
+
+.container
+  width: 1170px
+  margin: 0 auto
