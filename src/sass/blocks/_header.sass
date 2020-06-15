@@ -8,12 +8,15 @@
     left: 0
     img
       width: 104.5%
-      border-radius: 0 0 20% 20%
+      &:last-child
+        display: none
   &-panel
     height: 82px
     display: flex
     +sb
     color: darken($white-color, 10)
+    &__menu
+      display: none
     &__contact
       padding-top: 30px
       margin-left: 32px
@@ -48,6 +51,7 @@
       margin-top: 13px
       +light
       font-size: 13px
+      color: $white-color
     &__btn
       margin-top: 5px
       margin-left: 2px

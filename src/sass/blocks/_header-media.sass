@@ -1,0 +1,125 @@
+@media (max-width: 1200px)
+  .header
+    &-bg
+      img
+        width: 100%
+    &-nav
+      display: none
+    &-panel
+      display: flex
+      justify-content: space-between
+      &__logo
+        img
+          width: 108px
+      &__address
+        margin-top: 13px
+        font-size: 13px
+      &__buttons
+        position: fixed
+        bottom: 20px
+        right: 20px
+      &__btn
+        box-shadow: 0 0 16px lighten($main-color, 40)
+      &__icon
+        margin-right: 10px
+      &__phone
+        margin-right: 20px
+      &__menu
+        display: block
+
+@media (max-width: 992px)
+  .header
+    height: 72px
+    &-panel
+      &__description
+        margin-top: 7px
+      &__logo
+        img
+          width: 90px
+      &__address
+        margin-top: 8px
+        font-size: 11px
+      &__contact
+        padding-top: 27px
+
+@media (max-width: 567px)
+  .header
+    height: 68px
+    &-bg
+      left: 0
+      right: 0
+      transform: translate(-50%,0)
+      img
+        width: 200%
+        object-fit: cover
+        width: 150%
+    &-panel
+      &__description
+        font-size: 10px
+      &__logo
+        img
+          width: 78px
+      &__address
+        margin-top: 8px
+        font-size: 9px
+      &__contact
+        padding-top: 24px
+        margin-left: 0
+        height: 68px
+      &__phone
+        display: none
+
+@media (max-width: 420px)
+  .header
+    height: 56px
+    &-bg
+      top: 0
+      left: 0
+      transform: none
+      img
+        &:first-child
+          display: none
+        &:last-child
+          display: block
+          width: 100%
+          border-radius: 0
+    &-nav
+      display: none
+    &-panel
+      &__menu
+        display: block
+      &__info
+        padding-top: 9px
+      &__description
+        margin-left: 7px
+        font-size: 9px
+        margin-top: 10px
+      &__contact
+        padding-top: 17px
+        margin-left: 0
+      &__icon
+        margin-right: 10px
+      &__address
+        margin-top: 7px
+        font-size: 9px
+        +sb
+      &__logo
+        img
+          width: 77px
+      &__phone
+        display: none
+      &__buttons
+        display: none
+
+@media (max-width: 320px)
+  .header
+    &-bg
+      img
+        width: 100%
+        border-radius: 0
+    &-panel
+      &__contact
+        padding-top: 18px
+        margin-right: 0px
+      &__icon
+        margin-right: 21px
