@@ -1,0 +1,54 @@
+.hero
+  color: $white-color
+  &-block
+    &__title
+      margin-top: 182px
+      line-height: 50px
+      +light
+      font-size: 39px
+      font-weight: 100
+    &__advantages
+      display: flex
+      margin-top: 150px
+  &-advantage
+    position: relative
+    width: 211px
+    height: 227px
+    margin-right: 11px
+    +sb
+    text-align: center
+    background-color: $white-color
+    border-radius: 8px
+    color: $main-color
+    &:nth-child(2)
+      margin-top: 51px
+    &:nth-child(3)
+      margin-top: 102px
+    &::after
+      content: ''
+      position: absolute
+      z-index: -1
+      bottom: 0
+      left: 0
+      right: 0
+      margin: 0 auto
+      width: 200px
+      height: 1px
+      background: black
+      box-shadow: 0 0px 14px lighten($main-color, 0)
+    &__icon
+      display: flex
+      justify-content: center
+      align-items: center
+      margin: 0 auto
+      margin-top: -45px
+      width: 90px
+      height: 90px
+      border-radius: 45px
+      background-color: $white-color
+      box-shadow: 0 3px 16px lighten($main-color, 35)
+    &__text
+      width: 174px
+      margin: 0 auto
+      margin-top: 21px
+      line-height: 19px
