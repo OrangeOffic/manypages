@@ -8,6 +8,7 @@
     left: 0
     img
       width: 104.5%
+      border-radius: 0 0 20% 20%
   &-panel
     height: 82px
     display: flex
@@ -86,7 +87,6 @@
       position: absolute
       top: 84px
       left: 0
-      height: auto
       width: 258px
       margin: 0
       padding: 0
@@ -103,6 +103,8 @@
         padding-bottom: 5px
         line-height: 15px
         text-align: center
+        animation: aniDropLi 0.5s
+        animation-fill-mode: forwards
         a
           color: $white-color !important
           font-size: 13px
@@ -118,12 +120,10 @@
             width: 254px
             background: transparent
             animation: none
-            animation: aniDrop 0.3s
+            animation: aniLi 0.3s
             animation-fill-mode: forwards
             border-right: 2px solid white
-            border-left: 2px solid white
-        
-        
+            border-left: 2px solid white    
     &__item
       position: relative
       height: 100%
@@ -148,6 +148,8 @@
           background: white
         .header-nav__dropdown
           display: flex
+          animation: aniDropDown 0.3s
+          animation-fill-mode: forwards
 
       &:last-child
         margin: 0
