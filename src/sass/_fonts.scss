@@ -33,6 +33,17 @@
 
 @font-face {
   font-display: swap;
+  font-family: 'Proxima Nova Black';
+  src: url('../fonts/ProximaNova/ProximaNova-Black.eot');
+  src: url('../fonts/ProximaNova/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNova/ProximaNova-Black.woff') format('woff'),
+  url('../fonts/ProximaNova/ProximaNova-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
   font-family: 'Proxima Nova Regular';
   src: url('../fonts/ProximaNova/ProximaNova-Regular.eot');
   src: url('../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
@@ -56,6 +67,10 @@
 
 @mixin reg {
   font-family: 'Proxima Nova Regular', sans-serif;
+}
+
+@mixin black {
+  font-family: 'Proxima Nova Black', sans-serif;
 }
 
 
