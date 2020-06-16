@@ -1,0 +1,68 @@
+@media (max-width: 1200px)
+  .callback
+    &__bg
+      left: 14px
+    &-form
+      padding-left: 152px
+      &__inputs
+        width: 552px
+@media (max-width: 992px)
+  .callback
+    &__bg
+      left: 14px
+    &-form
+      padding-left: 0
+      &__inputs
+        width: auto
+      &__input
+        width: 240px
+      &__shield
+        margin-left: -11px
+@media (max-width: 768px)
+  .callback
+    position: relative
+    &__bg
+      top: 83px
+      left: calc(100% - 111px)
+      img
+        &:first-child
+          display: none
+        &:last-child
+          display: block
+    &-form
+      display: flex
+      flex-direction: column
+      align-items: center
+      &__inputs
+        flex-direction: column
+        align-items: center
+      &__input
+        margin-right: 0
+        margin-bottom: 10px
+      &__description
+        margin-top: 0
+        margin-bottom: 20px
+        text-align: center
+        width: 170px
+      &__shield
+        justify-content: center
+      &__submit
+        margin-left: 0
+      &__btn
+        width: 240px
+
+@media (max-width: 320px)
+  .callback
+    padding-top: 0
+    padding-bottom: 23px
+    &__title
+      padding-top: 25px
+      padding-bottom: 13px
+    &-form
+      &__input
+        width: 260px
+        margin-bottom: 6px
+      &__description
+        margin-top: 6px
+        margin-bottom: 17px
+        font-size: 9px
