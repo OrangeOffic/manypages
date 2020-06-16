@@ -1,0 +1,46 @@
+.callback
+  position: relative
+  padding-top: 42px
+  padding-bottom: 46px
+  background-color: $section-grey
+  &__bg
+    position: absolute
+    top: 0
+    left: 102px
+  &__title
+    padding-top: 0
+    padding-bottom: 23px
+    font-size: 25px
+    &::after
+      content: none
+      display: none
+  &-form
+    display: flex
+    padding-left: 212px
+    &__inputs
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      width: 552px
+      z-index: 1
+    &__description
+      text-align: center
+      margin-top: 17px
+      +light
+      font-size: 12px
+      color: black
+    &__text
+      font-size: 12px
+      +light
+      color: #bdbdbd
+    &__btn
+      width: 174px
+    &__shield
+      display: flex
+      align-items: center
+      margin-top: 6px
+    &__image
+      margin-right: 10px
+    &__submit
+      width: auto
+      margin-left: 21px
