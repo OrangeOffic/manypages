@@ -17,10 +17,51 @@ a
   border: 0
   border-radius: 100px
   box-shadow: 0 0 13px rgba(255,255,255,0.35)
+  transition: 0.2s
   &:focus
     outline: none
   &:hover
     cursor: pointer
+
+.section__title
+  position: relative
+  padding-top: 96px
+  line-height: 40px
+  padding-bottom: 40px
+  margin: 0 auto
+  text-align: center
+  +eb
+  font-size: 30px
+  &::after
+    content: ''
+    position: absolute
+    bottom: 31px
+    left: 0
+    right: 0
+    margin: 0 auto
+    display: block
+    height: 6px
+    width: 60px
+    background-image: url(../images/line.png)
+
+
+.blue
+  color: $main-color
+
+.dots
+  display: none
+  margin: 0 auto
+  margin-top: 10px
+  .dot
+    margin-right: 3px
+    width: 16px
+    height: 16px
+    background-color: #f1f1f1
+    border-radius: 8px
+    &:last-child
+      margin-right: 0
+    &_active
+      background-color: $main-color
 
 .container
   width: 1170px

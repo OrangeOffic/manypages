@@ -1,0 +1,29 @@
+@media (max-width: 992px)
+  .gifts
+    &-block
+      align-items: center
+      flex-direction: column
+  .gift
+    margin-right: 0
+    &:nth-child(2)
+      display: none
+    &:nth-child(3)
+      display: none
+    &__dots
+      display: flex
+
+@media (max-width: 320px)
+  .gift
+    width: 290px
+    height: 308px
+    &__image
+      width: 200px
+      height: 200px
+      margin-top: -30px
+      img
+        width: 270px
+    &__title
+      margin-top: 22px
+      font-size: 17px
+    &__dots
+      margin-top: 23px
