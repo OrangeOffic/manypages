@@ -1,0 +1,69 @@
+.reviews
+  padding-bottom: 60px
+  &-block
+    position: relative
+.review
+  position: relative
+  width: 740px
+  height: 283px
+  padding: 45px
+  margin: 0 auto
+  margin-top: 19px
+  background-color: $white-color
+  background-image: url('../images/reviews/bg.png')
+  background-repeat: no-repeat
+  background-position:  667px -37px
+  border-radius: 10px
+  box-shadow: 0 0 6px $main-shadow
+  &__icon
+    position: absolute
+    top: 19px
+    right: 18px
+  &__avatar
+    display: flex
+  &__image
+    margin-top: -20px
+    margin-top: -105px
+    margin-left: -8px
+    width: 117px
+    height: 117px
+    border-radius: 117px
+    box-shadow: 0 0 6px $main-shadow
+  &__rating
+    margin-top: -21px
+    margin-left: 23px
+    img
+      margin-right: -1px
+  &__who
+    display: flex
+    align-items: center
+    color: $main-color
+    +cnLight
+    font-size: 15px
+  &__name
+    margin-top: 19px
+    margin-right: 42px
+    font-size: 22px
+    +cnBold
+  &__company
+    margin-right: 20px
+  &__description
+    font-size: 16px
+    +cnBold
+  &__text
+    max-width: 637px
+    margin-top: 14px
+    line-height: 21px
+    +cnReg
+  &__arrows
+    position: absolute
+    top: 45%
+    width: 100%
+    display: flex
+    justify-content: space-between
+    img
+      width: 16px
+      &:hover
+        cursor: pointer
+  &__prev
+    transform: rotate(180deg)
