@@ -453,9 +453,63 @@
           <div class="profession__arrow profession__next"><img src="images/professions/next.png"></div>
         </div>
 
+        <div class="dots profession__dots">
+          <div class="dot dot_active profession__dot"></div>
+          <div class="dot profession__dot"></div>
+          <div class="dot profession__dot"></div>
+        </div>
+
       </div>
 
     </div>
+  </section>
+
+  <section class="calc">
+    <div class="container">
+
+      <h2 class="section__title calc__title"><span class="blue">Заполните поля ниже,</span> чтобы рассчитать стоимость уборки 
+        для вашего объекта</h2>
+      <span class="section__subtitle calc__subtitle">
+        Наш сотрудник перезвонит вам сразу же, как получит сообщение и озвучит рассчеты
+      </span>
+
+      <form class="calc-form">
+
+        <div class="calc-form__inputs">
+
+          <div class="input-group"><input class="input calc-form__input" type="text" placeholder="Как вас зовут?"></div>
+          <div class="input-group"><input class="input calc-form__input" type="tel" placeholder="Телефон для связи"></div>
+          <div class="input-group"><select name="select" class="select input calc-form__select" id="">
+            <option value="">Выберите услугу</option>
+            <option value="Ежедневная уборка внутренних помещений">Ежедневная уборка внутренних помещений</option>
+            <option value="Генеральная уборка любых помещений">Генеральная уборка любых помещений</option>
+            <option value="Уборка территории">Уборка территории</option>
+            <option value="Сезонное мытье окон">Сезонное мытье окон</option>
+          </select></div>
+          <div class="input-group"><input class="input calc-form__input" type="email" placeholder="E-mail (куда отправить КП)"></div>
+
+        </div>
+
+        <div class="calc-form__submit">
+          <input type="submit" value="Рассчитать" class="btn btn-secondary calc-form__btn">
+          <div class="calc-form__shield">
+            <div class="calc-form__image"><img src="images/callback/checked.png" alt=""></div>
+            <span class="calc-form__text">Ваши данные в безопасности</span>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="calc__three">
+      <img src="images/calc/three.png">
+    </div>
+
+    <div class="calc__woman">
+      <img src="images/calc/woman.png">
+    </div>
+
   </section>
 
 </body>
