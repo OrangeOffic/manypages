@@ -1,5 +1,74 @@
 @media (max-width: 1200px)
   .calc
     &-form
+      z-index: 1
+      width: 536px
+      margin: 0 auto
       &__inputs
         flex-wrap: wrap
+      &__input
+        margin-bottom: 15px
+      .input-group
+        &:nth-child(2n)
+          .calc-form__input
+            margin-right: 0
+      &__btn
+        z-index: 1
+    &__three
+      top: 172px
+@media (max-width: 992px)
+  .calc
+    &__woman
+      img
+        width: 264px
+    &__title
+      width: 737px
+    &__text
+      z-index: 1
+@media (max-width: 768px)
+  .calc
+    &__title
+      width: 549px
+@media (max-width: 567px)
+  .calc
+    &__title
+      width: auto
+    &-form
+      width: 100%
+      &__inputs
+        flex-direction: column
+    &__woman
+      bottom: 0
+@media (max-width: 420px)
+  .calc
+    padding-bottom: 25px
+    &__title
+      padding-top: 26px
+    &__subtitle
+      margin-top: -20px
+      padding-bottom: 18px
+    &__woman
+      img
+        &:first-child
+          display: none
+        &:last-child
+          display: block
+    &-form
+      &__input
+        margin-bottom: 6px
+        margin-right: 0 !important
+      &__inputs
+        align-items: center
+      &__submit
+        margin-top: 14px
+    &__woman
+      top: 169px
+      right: 0
+      img
+        width: 129px
+    &__three
+      height: 0
+      top: 281px
+      left: 3px
+      img
+        width: 65px
